@@ -2,6 +2,8 @@
 
 ## 📌 Project Overview
 
+![Sales Admin Panel](assets/cover.png)
+
 The Sales Admin Panel is a **Node.js** backend API system for managing wholesalers and retailers. The project follows the **MVC architecture** and uses **Sequelize ORM** with **PostgreSQL/MySQL** as the database.
 
 ## 🛠️ Tech Stack
