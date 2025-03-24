@@ -18,12 +18,6 @@ const sequelize = new Sequelize({
   password: process.env.PG_PASSWORD || 'password',
   database: process.env.PG_DATABASE || 'wholesaler',
   models: [Retailer, Wholesaler, Stock, WholesalerRetailer],
-  dialectOptions: {
-    ssl: {
-      require: process.env.NODE_ENV === 'production' ? true : false,
-      rejectUnauthorized: false,
-    },
-  },
   logging: console.log,
 });
 

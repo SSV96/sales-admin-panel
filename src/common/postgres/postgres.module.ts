@@ -21,14 +21,6 @@ import { PostgresType } from 'src/config';
           database: dbName,
           autoLoadModels: true,
           synchronize: true,
-          ssl: true,
-          dialectOptions: {
-            ssl: {
-              require: true,
-              rejectUnauthorized: false, // This is required for some cloud providers like Heroku
-            },
-            logging: true,
-          },
         };
       },
     }),
