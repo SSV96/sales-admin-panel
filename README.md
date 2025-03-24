@@ -97,14 +97,14 @@ GET sales/max-turnover
 ### **Step 1: Clone the repository**
 
 ```bash
-$ git clone https://github.com/SSV96/sales-admin-panel.git
-$ cd SalesAdminPanel
+ git clone https://github.com/SSV96/sales-admin-panel.git
+ cd SalesAdminPanel
 ```
 
 ### **Step 2: Install Dependencies**
 
 ```bash
-$ npm install
+ npm install
 ```
 
 ### **Step 3: Setup Environment Variables**
@@ -123,26 +123,26 @@ PG_DATABASE=wholesaler
 ### **Step 4: Run Migrations**
 
 ```bash
-$ npx sequelize db:migrate
+ npx sequelize db:migrate
 ```
 
 ### **Step 5: Seed the Database**
 
 ```bash
-$ npm run seed
+ npm run seed
 ```
 
 ### **Step 6: Start the Server**
 
 ```bash
 # Watch mode
-$ npm run start:local
+ npm run start:local
 
 # Development
-$ npm run start:dev
+ npm run start:dev
 
 # Production mode
-$ npm run start:prod
+ npm run start:prod
 ```
 
 ## 🔥 Run API Tests
