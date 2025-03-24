@@ -112,10 +112,11 @@ $ npm install
 Create a `.env` file and add the following details:
 
 ```env
+PORT=3000
 PG_HOST=localhost
 PG_PORT=5432
 PG_USER=postgres
-PG_PASSWORD=password
+PG_PASSWORD=sathya
 PG_DATABASE=wholesaler
 ```
 

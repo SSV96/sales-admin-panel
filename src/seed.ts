@@ -18,10 +18,9 @@ const sequelize = new Sequelize({
   password: process.env.PG_PASSWORD || 'password',
   database: process.env.PG_DATABASE || 'wholesaler',
   models: [Retailer, Wholesaler, Stock, WholesalerRetailer],
-  ssl: true,
   dialectOptions: {
     ssl: {
-      require: true,
+      require: process.env.NODE_ENV === 'local' ? true : false,
       rejectUnauthorized: false,
     },
   },
