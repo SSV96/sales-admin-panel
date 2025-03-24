@@ -26,7 +26,7 @@ module.exports = {
     port: process.env.PG_PORT || 5432,
     dialectOptions: {
       ssl: {
-        require: true,
+        require: process.env.NODE_ENV === 'production' ? true : false,
         rejectUnauthorized: false, // Use false only for local development with SSL
       },
     },
