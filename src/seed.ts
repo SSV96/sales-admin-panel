@@ -9,7 +9,7 @@ import { Stock } from './core/stock/stock.schema';
 import * as dotenv from 'dotenv';
 
 dotenv.config();
-
+const NODE_ENV = process.env.NODE_ENV;
 const sequelize = new Sequelize({
   dialect: 'postgres',
   host: process.env.PG_HOST || 'localhost',
@@ -18,7 +18,16 @@ const sequelize = new Sequelize({
   password: process.env.PG_PASSWORD || 'password',
   database: process.env.PG_DATABASE || 'wholesaler',
   models: [Retailer, Wholesaler, Stock, WholesalerRetailer],
-  logging: console.log,
+  dialectOptions:
+    NODE_ENV === 'production'
+      ? {
+          ssl: {
+            require: true,
+            rejectUnauthorized: false,
+          },
+        }
+      : {},
+  logging: NODE_ENV !== 'production',
 });
 
 async function seedDatabase() {
