@@ -98,7 +98,7 @@ GET sales/max-turnover
 
 ```bash
  git clone https://github.com/SSV96/sales-admin-panel.git
- cd SalesAdminPanel
+ cd  sales-admin-panel
 ```
 
 ### **Step 2: Install Dependencies**
