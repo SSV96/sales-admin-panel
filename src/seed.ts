@@ -20,7 +20,7 @@ const sequelize = new Sequelize({
   models: [Retailer, Wholesaler, Stock, WholesalerRetailer],
   dialectOptions: {
     ssl: {
-      require: process.env.NODE_ENV === 'local' ? true : false,
+      require: process.env.NODE_ENV === 'production' ? true : false,
       rejectUnauthorized: false,
     },
   },
