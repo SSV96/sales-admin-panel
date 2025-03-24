@@ -97,7 +97,7 @@ GET sales/max-turnover
 ### **Step 1: Clone the repository**
 
 ```bash
-$ git clone <repo-url>
+$ git clone https://github.com/SSV96/sales-admin-panel.git
 $ cd SalesAdminPanel
 ```
 
@@ -135,11 +135,11 @@ $ npm run seed
 ### **Step 6: Start the Server**
 
 ```bash
-# Development
-$ npm run start
-
 # Watch mode
 $ npm run start:local
+
+# Development
+$ npm run start:dev
 
 # Production mode
 $ npm run start:prod
